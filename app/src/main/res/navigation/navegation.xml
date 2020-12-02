@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navegation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegation"
+    app:startDestination="@id/login">
 
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.examenriverachristian.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_paginaInicioFragment"
+            app:destination="@id/paginaInicioFragment" />
+        <action
+            android:id="@+id/action_login_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paginaInicioFragment"
+        android:name="com.example.examenriverachristian.PaginaInicioFragment"
+        android:label="fragment_pagina_inicio"
+        tools:layout="@layout/fragment_pagina_inicio" >
+        <argument
+            android:name="usuario"
+            app:argType="string" />
+        <argument
+            android:name="contra"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.examenriverachristian.RegistroFragment"
+        android:label="RegistroFragment" >
+        <action
+            android:id="@+id/action_registroFragment_to_paginaInicioFragment"
+            app:destination="@id/paginaInicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paginaFragment"
+        android:name="com.example.examenriverachristian.PaginaFragment"
+        android:label="PaginaFragment" />
+    <fragment
+        android:id="@+id/pagina2Fragment"
+        android:name="com.example.examenriverachristian.Pagina2Fragment"
+        android:label="Pagina2Fragment" />
+    <fragment
+        android:id="@+id/pagina3Fragment"
+        android:name="com.example.examenriverachristian.Pagina3Fragment"
+        android:label="fragment_pagina3"
+        tools:layout="@layout/fragment_pagina3" />
+    <fragment
+        android:id="@+id/acercaFragment"
+        android:name="com.example.examenriverachristian.AcercaFragment"
+        android:label="fragment_acerca"
+        tools:layout="@layout/fragment_acerca" />
 </navigation>

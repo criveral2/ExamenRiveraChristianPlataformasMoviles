@@ -1,4 +1,4 @@
-package com.example.quesalga.Modelo
+package com.example.examenriverachristian.Modelo
 
 import java.io.Serializable
 

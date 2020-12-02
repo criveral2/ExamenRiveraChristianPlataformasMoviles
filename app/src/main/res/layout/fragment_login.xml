@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <data>
+
 
     </data>
 
@@ -11,44 +11,44 @@
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
-        tools:context=".RegistroFragment">
+        tools:context=".Login">
 
-        <!-- TODO: Update blank fragment layout -->
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="242dp"
-            android:layout_height="90dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center_horizontal"
-            android:text="Ingresar Datos" />
 
         <EditText
-            android:id="@+id/txt_UserRe"
+            android:id="@+id/txt_User"
             android:layout_width="242dp"
             android:layout_height="90dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
-            android:hint="Ingrese un Usuario" />
+            android:hint="Ingrese su Cl" />
 
         <EditText
-            android:id="@+id/txt_ContraseniaRe"
+            android:id="@+id/txt_Contrasenia"
             android:layout_width="242dp"
             android:layout_height="90dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
-            android:hint="Ingrese una contrasenia"/>
 
+            android:hint="Ingrese codigo del formualrio" />
 
         <Button
-            android:id="@+id/btn_Logear"
+            android:id="@+id/btn_Ingresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Ingresar" />
+            android:text="Pantalla Inicio" />
+
+
+        <Button
+            android:id="@+id/btn_Crear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Registrarce" />
+
 
 
 

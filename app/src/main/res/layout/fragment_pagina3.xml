@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Pagina3Fragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:context=".Pagina3Fragment">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@android:dimen/app_icon_size"
+            android:text="Salud y Vida"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/txt_nomDesarr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="Al ser lactancia exclusiva, empezar sólidos con mi bebé siempre me dio un poco de ansiedad. Nunca había tenido que preocuparme de qué darle, de su nutrición o de horarios. Por suerte apareció Pure y con la asesoría de Sofía y Paola tuve el mejor acompañamiento posible en esta nueva etapa. Aparte que las recetas son súper naturales y deliciosas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="10/12/2020" />
+
+    </LinearLayout>
+</layout>

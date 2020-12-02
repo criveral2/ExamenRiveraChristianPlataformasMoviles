@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/paginaFragment"
+        android:title="MedioAmbiente" />
+    <item
+        android:id="@+id/pagina2Fragment"
+        android:title="Mecanica" />
+    <item
+        android:id="@+id/pagina3Fragment"
+        android:title="VidaSaludable" />
 </menu>
